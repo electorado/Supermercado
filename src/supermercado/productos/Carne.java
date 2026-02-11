@@ -7,4 +7,18 @@ public class Carne extends Frescos{
         super(nombre, precio, descuento);
         this.tipoCarne = tipoCarne;
     }
+    public String infoProducto() {
+        return (super.infoProducto() + "\nTipo de Carne:\t" + tipoCarne);
+    }
+
+    public TipoCarne getTipoCarne() {
+        return tipoCarne;
+    }
+
+    public void setTipoCarne(TipoCarne tipoCarne) {
+        this.tipoCarne = tipoCarne;
+    }
+
+
 }
+

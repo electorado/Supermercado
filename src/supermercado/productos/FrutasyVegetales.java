@@ -7,4 +7,16 @@ public class FrutasyVegetales extends Frescos{
         super(nombre, precio, descuento);
         this.tipoCultivo = tipoCultivo;
     }
+
+    public String infoProducto(){
+        return (super.infoProducto() + "\nTipo de Cultivo:\t" + tipoCultivo);
+    }
+
+    public TipoCultivo getTipoCultivo() {
+        return tipoCultivo;
+    }
+
+    public void setTipoCultivo(TipoCultivo tipoCultivo) {
+        this.tipoCultivo = tipoCultivo;
+    }
 }

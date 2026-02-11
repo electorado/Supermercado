@@ -7,4 +7,15 @@ public class Lacteos extends Frescos{
         super(nombre, precio, descuento);
         this.grasa = grasa;
     }
+    public String infoProducto() {
+        return (super.infoProducto() + "\nNivel de grasa:\t" + grasa);
+    }
+
+    public Grasa getGrasa() {
+        return grasa;
+    }
+
+    public void setGrasa(Grasa grasa) {
+        this.grasa = grasa;
+    }
 }
